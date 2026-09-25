@@ -53,21 +53,27 @@ claude mcp add --transport http gingerlive https://mcp.gingerlive.io/mcp
 }
 ```
 
-**Clients that only support stdio:**
+**Run it locally over stdio** (same tools, no network needed except the live llms.txt resource):
+
+```bash
+git clone https://github.com/gingerlive-io/gingerlive-mcp && cd gingerlive-mcp && npm install
+```
 
 ```json
 {
   "mcpServers": {
-    "gingerlive": { "command": "npx", "args": ["-y", "mcp-remote", "https://mcp.gingerlive.io/mcp"] }
+    "gingerlive": { "command": "npx", "args": ["tsx", "/path/to/gingerlive-mcp/src/stdio.ts"] }
   }
 }
 ```
+
+Or with Docker: `docker build -t gingerlive-mcp . && docker run -i --rm gingerlive-mcp`
 
 Then ask things like *"What livestream ad formats does GingerLive offer?"*, *"Show me GingerLive's campaign case studies"* or *"How can I monetize my Kick stream?"*
 
 ## How it works
 
-A Cloudflare Worker built with the [Agents SDK](https://developers.cloudflare.com/agents/) (`McpAgent`) and the official MCP TypeScript SDK. Every answer comes from `src/data/agent-data.json`, a static snapshot generated from the same source as [gingerlive.io/llms.txt](https://gingerlive.io/llms.txt), so the server only ever returns information that is already public on gingerlive.io.
+Tools, resources and prompts are registered once in `src/server.ts` and served two ways: `src/index.ts` (the hosted Cloudflare Worker) and `src/stdio.ts` (a local stdio process). The Worker is built with the [Agents SDK](https://developers.cloudflare.com/agents/) (`McpAgent`) and the official MCP TypeScript SDK. Every answer comes from `src/data/agent-data.json`, a static snapshot generated from the same source as [gingerlive.io/llms.txt](https://gingerlive.io/llms.txt), so the server only ever returns information that is already public on gingerlive.io.
 
 | Path | Purpose |
 |---|---|
@@ -80,7 +86,8 @@ A Cloudflare Worker built with the [Agents SDK](https://developers.cloudflare.co
 
 ```bash
 npm install
-npm run dev      # http://localhost:8787/mcp
+npm run stdio    # local stdio server
+npm run dev      # local Worker at http://localhost:8787/mcp
 npm run deploy   # to your own Cloudflare account (change the route in wrangler.jsonc first)
 ```
 
