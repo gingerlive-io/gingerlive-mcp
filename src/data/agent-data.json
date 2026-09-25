@@ -1,5 +1,5 @@
 {
-    "generatedAt": "2026-08-23T09:56:58+00:00",
+    "generatedAt": "2026-09-25T16:17:03+03:00",
     "source": "https://gingerlive.io",
     "company": {
         "name": "GingerLive",
@@ -197,12 +197,12 @@
             "slug": "advertise-on-kick",
             "title": "How to Advertise on Kick",
             "url": "https://gingerlive.io/resources/advertise-on-kick/",
-            "description": "Why Kick attracted a fast-growing streamer base, the realistic routes for brands to advertise there, how it differs from Twitch for advertisers, and what to watch for on brand safety.",
+            "description": "The three ways brands can advertise on Kick in 2026: Kick's own mid-roll ads (launched August 2026), direct streamer sponsorships, and in-stream overlay networks. How each is bought, what it costs to run, and Kick's disclosure and brand-safety rules.",
             "audience": "brands",
             "related": [
                 "twitch-advertising",
                 "twitch-vs-kick-vs-youtube-vs-tiktok",
-                "livestream-advertising-cost"
+                "kick-partner-program"
             ]
         },
         {
@@ -212,9 +212,9 @@
             "description": "The four major livestream platforms compared for advertisers — audience, content culture, available ad routes, measurement maturity and brand safety — plus when to use each.",
             "audience": "brands",
             "related": [
+                "livestreaming-statistics",
                 "twitch-advertising",
-                "advertise-on-kick",
-                "livestream-advertising-cost"
+                "advertise-on-kick"
             ]
         },
         {
@@ -237,8 +237,8 @@
             "audience": "brands",
             "related": [
                 "livestream-advertising",
-                "gen-z-advertising",
-                "twitch-advertising"
+                "in-game-advertising",
+                "gen-z-advertising"
             ]
         },
         {
@@ -290,15 +290,39 @@
             ]
         },
         {
+            "slug": "in-game-advertising",
+            "title": "Gaming Advertising in 2026: In-Game Ads vs Livestream Ads vs Esports",
+            "url": "https://gingerlive.io/resources/in-game-advertising/",
+            "description": "Every way brands advertise to gamers in 2026: in-game formats (intrinsic, rewarded, interstitial, branded worlds), livestream in-stream ads, esports and creator sponsorships. How each is bought and measured, and when to use which.",
+            "audience": "brands",
+            "related": [
+                "gen-z-advertising",
+                "esports-sponsorship",
+                "twitch-advertising"
+            ]
+        },
+        {
             "slug": "livestream-advertising-benchmarks",
             "title": "Livestream Advertising Benchmarks: Real Campaign Results",
             "url": "https://gingerlive.io/resources/livestream-advertising-benchmarks/",
             "description": "Performance benchmarks for livestream advertising, drawn from GingerLive's own published campaigns: view-through rate, completion, click-through rate and reach across Twitch, Kick, YouTube and TikTok.",
             "audience": "brands",
             "related": [
+                "livestreaming-statistics",
                 "livestream-advertising",
-                "livestream-advertising-cost",
-                "livestream-advertising-vs-programmatic-video"
+                "livestream-advertising-cost"
+            ]
+        },
+        {
+            "slug": "livestreaming-statistics",
+            "title": "Livestreaming Statistics 2026: Twitch, Kick, YouTube Live and TikTok LIVE",
+            "url": "https://gingerlive.io/resources/livestreaming-statistics/",
+            "description": "Up-to-date livestreaming statistics for 2026: hours watched and market share for YouTube Live, TikTok LIVE, Twitch and Kick, Twitch viewers and demographics, Kick growth, Gen Z viewing, and GingerLive network data, all sourced.",
+            "audience": "brands",
+            "related": [
+                "twitch-vs-kick-vs-youtube-vs-tiktok",
+                "livestream-advertising-benchmarks",
+                "gen-z-advertising"
             ]
         },
         {
@@ -309,6 +333,7 @@
             "audience": "streamers",
             "related": [
                 "streamer-sponsorships",
+                "kick-partner-program",
                 "twitch-advertising"
             ]
         },
@@ -321,6 +346,18 @@
             "related": [
                 "how-to-make-money-streaming",
                 "twitch-advertising"
+            ]
+        },
+        {
+            "slug": "kick-partner-program",
+            "title": "Kick Partner Program 2026: Requirements, Pay and Every Way to Make Money on Kick",
+            "url": "https://gingerlive.io/resources/kick-partner-program/",
+            "description": "The KICK Partner Program requirements for 2026, how the 95/5 split and partner stream revenue work, what KICK Ads mean for streamers, and every other way to make money on Kick, with payout rules from Kick's own help center.",
+            "audience": "streamers",
+            "related": [
+                "how-to-make-money-streaming",
+                "streamer-sponsorships",
+                "advertise-on-kick"
             ]
         }
     ],
