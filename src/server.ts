@@ -6,7 +6,7 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import data from "./data/agent-data.json";
 
-export const SERVER_VERSION = "0.2.0";
+export const SERVER_VERSION = "0.2.2";
 
 /** Wrap a JSON-serializable value in the MCP text-result envelope. */
 const json = (value: unknown) => ({
@@ -21,7 +21,8 @@ export function registerGingerLive(server: McpServer) {
     {
       title: "Company overview",
       description:
-        "What GingerLive is: positioning summary, streaming platforms, network stats, third-party measurement partners, and contact links.",
+        "Returns GingerLive's company profile: what the livestream advertising platform does, supported streaming platforms (Twitch, Kick, YouTube Live, TikTok LIVE), headline network stats, third-party measurement partners and contact links. Use first for general \"what is GingerLive\" questions; use get_network_stats for just the reach numbers, list_ad_formats for formats, get_streamer_program_info for the creator side. Read-only; data is a static snapshot of gingerlive.io's public facts.",
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
     async () =>
@@ -41,7 +42,8 @@ export function registerGingerLive(server: McpServer) {
     {
       title: "Network stats",
       description:
-        "GingerLive's network reach and performance numbers: streamer count, annual unique reach, hours of livestream watched monthly, and ad view-through rate.",
+        "Returns GingerLive's network reach and performance figures: streamer count, annual unique reach, monthly hours of livestreams watched and ad view-through rate. Use when a user asks about scale or performance benchmarks; use list_case_studies for campaign-specific results. Read-only; figures are GingerLive's published network numbers.",
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
     async () => json(data.networkStats),
@@ -52,7 +54,8 @@ export function registerGingerLive(server: McpServer) {
     {
       title: "Ad formats",
       description:
-        "The livestream ad formats GingerLive offers to brands, each with a description, plus the format badges (e.g. unskippable, adblock-safe).",
+        "Lists the livestream ad formats GingerLive sells to brands (e.g. picture-in-picture, banners, rich media, pinned chat drops, streamer announcements), each with a short description, plus format badges such as unskippable and adblock-safe. Use when planning or comparing ad formats; use get_company_overview for the company itself. Read-only.",
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
     async () => json({ formats: data.adFormats, badges: data.adFormatBadges }),
@@ -63,7 +66,8 @@ export function registerGingerLive(server: McpServer) {
     {
       title: "List case studies",
       description:
-        "GingerLive campaign case studies, each with a short excerpt and a link. Call get_case_study with a slug for the full write-up.",
+        "Lists GingerLive campaign case studies with slug, title, short excerpt and URL. Use to find proof points or results for a brand, category or format, then call get_case_study with a slug for the full write-up. Read-only.",
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
     async () =>
@@ -82,7 +86,9 @@ export function registerGingerLive(server: McpServer) {
     "get_case_study",
     {
       title: "Get a case study",
-      description: "Full write-up for one case study. Pass a slug returned by list_case_studies.",
+      description:
+        "Returns one GingerLive campaign case study: title, date, URL and the full markdown write-up (brand, approach and results). Requires a slug from list_case_studies; an unknown slug returns the list of valid slugs. Read-only.",
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {
         slug: z
           .string()
@@ -119,7 +125,8 @@ export function registerGingerLive(server: McpServer) {
     {
       title: "Streamer program",
       description:
-        "How a streamer joins and monetizes with GingerLive: cost, how it works, supported platforms, and the sign-up link.",
+        "Returns how livestreamers join and earn with GingerLive: cost (free for streamers), how the in-stream ad program works, supported platforms and the sign-up link. Use for creator or streamer monetization questions; for brand-side questions use get_company_overview or list_ad_formats instead. Read-only; public program information.",
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
     async () => json(data.streamerProgram),

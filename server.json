@@ -3,7 +3,7 @@
   "name": "io.gingerlive/mcp",
   "title": "GingerLive",
   "description": "GingerLive livestream ad formats, network reach stats, campaign case studies, and streamer program.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "websiteUrl": "https://gingerlive.io",
   "remotes": [
     {
