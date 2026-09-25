@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.gingerlive/mcp",
+  "title": "GingerLive",
+  "description": "GingerLive livestream ad formats, network reach stats, campaign case studies, and streamer program.",
+  "version": "0.2.1",
+  "websiteUrl": "https://gingerlive.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gingerlive.io/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/gingerlive-io/gingerlive-mcp",
+    "source": "github"
+  }
+}

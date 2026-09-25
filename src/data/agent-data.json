@@ -1,0 +1,352 @@
+{
+    "generatedAt": "2026-08-23T09:56:58+00:00",
+    "source": "https://gingerlive.io",
+    "company": {
+        "name": "GingerLive",
+        "legalName": "Gingerlive Bilişim Teknolojileri A.Ş.",
+        "summary": "GingerLive is a livestream advertising platform that connects brands with 1,000+ streamers on Twitch, Kick, YouTube and TikTok. Its Streamsense AI places non-intrusive, unskippable ads at exactly the right live moment, so streamers earn from their content and brands reach Gen Z at scale.",
+        "platforms": [
+            "Twitch",
+            "Kick",
+            "YouTube Live",
+            "TikTok Live"
+        ],
+        "contactEmail": "info@gingerlive.io",
+        "headquarters": "Kadir Has Üniversitesi Teknopark, Selimpaşa Mh. No:10/1, 34690 Silivri / İstanbul, Türkiye",
+        "social": {
+            "linkedin": "https://linkedin.com/company/88005504",
+            "instagram": "https://instagram.com/gingerlivestream",
+            "x": "https://x.com/GGLiveOfficial",
+            "discord": "https://discord.gg/X2PMmF9GjB"
+        },
+        "links": {
+            "home": "https://gingerlive.io/",
+            "brandsContact": "https://gingerlive.io/brands/#contact",
+            "streamerSignup": "https://gingerlive.io/streamer/",
+            "streamersInfo": "https://gingerlive.io/streamers/",
+            "resources": "https://gingerlive.io/resources/",
+            "caseStudies": "https://gingerlive.io/casestudies/",
+            "contact": "https://gingerlive.io/contact/",
+            "privacy": "https://gingerlive.io/privacy/",
+            "developers": "https://gingerlive.io/developers/",
+            "openapi": "https://gingerlive.io/openapi.json"
+        }
+    },
+    "networkStats": [
+        {
+            "value": "30M+",
+            "label": "Unique reach per year"
+        },
+        {
+            "value": "58M",
+            "label": "Hours of livestreams watched monthly"
+        },
+        {
+            "value": "1000+",
+            "label": "Streamer network"
+        },
+        {
+            "value": "~99%",
+            "label": "Ad view-through rate (VTR)"
+        }
+    ],
+    "measurement": {
+        "thirdPartyVerification": [
+            "IAS",
+            "DoubleVerify",
+            "DoubleClick",
+            "Adform",
+            "Gemius"
+        ],
+        "listing": "IAB Known Agents List"
+    },
+    "adFormats": [
+        {
+            "title": "Picture in Picture",
+            "description": "A 60-second video ad playing in the corner of the stream. Grabs attention without covering content."
+        },
+        {
+            "title": "Horizontal & Vertical Banners",
+            "description": "30-second animated or static banners, placed smartly within the stream layout."
+        },
+        {
+            "title": "Rich Media",
+            "description": "A premium format with countdowns, animations and interactive layers that demand attention."
+        },
+        {
+            "title": "Pinned Chat Drops",
+            "description": "Promo messages with tracking links drop into chat and stay pinned for 3 minutes. Quizzes and reward drops create engagement."
+        },
+        {
+            "title": "Announcement",
+            "description": "The streamer showcases your product live: unboxing, trial, website review. Your brand becomes the main event."
+        },
+        {
+            "title": "Watch Parties & Custom Integrations",
+            "description": "Sponsored co-viewing events and real-time data integrations, including live score notifications."
+        }
+    ],
+    "adFormatBadges": [
+        "Unskippable",
+        "Adblock-Safe",
+        "~99% VTR"
+    ],
+    "caseStudies": [
+        {
+            "slug": "gingerlive-golf-roko-spring-2025-case-study",
+            "title": "Golf Roko x GingerLive Spring 2025 Campaign",
+            "url": "https://gingerlive.io/casestudies/gingerlive-golf-roko-spring-2025-case-study/",
+            "date": "August 05, 2025",
+            "image": "https://cdn.gingerlive.io/sitecontent/2026/07/de88fad13f9b02ed.jpg",
+            "excerpt": "Bringing a Sweet Break to Gamers Through Immersive, Ad-Block-Resistant Livestream AdvertisingIn Spring 2025, Golf Roko, Skala Media Solutions and GingerLive launched GingerLive’s first major high-budget livestream advertising activation.This campaign introduced stream-native overlay ads across Twitc…",
+            "bodyMarkdown": "## **Bringing a Sweet Break to Gamers Through Immersive, Ad-Block-Resistant Livestream Advertising**\n\nIn Spring 2025, **Golf Roko**, **Skala Media Solutions** and **GingerLive** launched GingerLive’s first major high-budget livestream advertising activation.\n\nThis campaign introduced **stream-native overlay ads** across Twitch and Kick, months before Streamsense existed,and demonstrated how GingerLive’s technology could deliver **100% View-Through Rates (VTR)** and **complete immunity to ad-blockers**.\n\nThis project became a defining milestone in GingerLive’s journey, validating livestream overlays as a scalable, high-performance channel for FMCG brands.\n\n## **About the Brand: What Is Golf Roko?**\n\nFor international readers unfamiliar with the brand:\n\n**Golf Roko** is a beloved **ice cream product line in Turkey**, produced by **Golf Ice Cream (Golf Dondurma), **one of the country’s leading frozen dessert brands.\n\nRoko products are associated with **youth culture, fun, and quick refreshment**, which makes them a natural fit for gaming audiences who often enjoy light, playful messaging.\n\n## **Campaign Overview**\n\nGolf Roko wanted to bring a “sweet break” into livestream environments, spaces where young audiences are highly engaged but traditionally difficult to reach due to **ad-block usage**, **banner blindness**, and **interruptive ad fatigue**.\n\nGingerLive deployed **non-intrusive, content-safe overlay ads** that appeared directly inside the live stream layout, guaranteeing:\n\n- - **100% VTR** (ads fully visible for their entire duration)\n\n- - **Ad-block resistance** (browser source overlays bypass all consumer ad-blockers)\n\n- - **Zero interruption to gameplay**\n\nThese placements became a natural part of the live entertainment, aligning perfectly with Golf Roko’s playful brand identity.\n\n### **Objectives**\n\n### **1. Reach Turkish gaming audiences at scale**\n\nAcross Twitch and Kick, where ad-block usage is extremely high.\n\n### **2. Deliver a fully visible, fully completed brand experience**\n\nUnskippable yet non-annoying via native overlays.\n\n### **3. Test GingerLive’s readiness for large-budget campaigns**\n\nThis was the first activation at scale, serving as a technical stress test for the platform.**Technology Spotlight: GingerLive Overlays **\n**Ad-Block Proof Delivery**\n\nUnlike pre-rolls, mid-rolls, or display banners, GingerLive’s overlay ads are:\n\n- - Rendered **inside** the stream through a browser source\n\n- - Not classified as ads by ad-blockers\n\n- - Impossible to skip or block\n\n- - Yet fully respectful of the viewing experience\n\nThis enables **guaranteed reach**, especially among gaming audiences where ad-block usage exceeds 40, 60%.\n\n### **100% View-Through Rate (VTR)**\n\nEvery viewer saw the ad for its full duration because:\n\n- - The overlay remained in-view throughout gameplay\n\n- - It did not interrupt or cover key action\n\n- - Viewers naturally kept watching the stream\n\nThis provides brands with **maximum message retention** and unmatched consistency compared to traditional video ads.\n\n### **Stream-Safe Native Integrations**\n\nBefore AI contextual triggers existed, GingerLive’s early tech still supported:\n\n- - Lightweight, latency-free visual overlays\n\n- - High-quality rendering across thousands of viewer-hours\n\n- Seamless deployment across dozens of different games and creators\n\nThis infrastructure laid the groundwork for Streamsense and GingerLive’s later innovations.\n\n## **Execution & Campaign Scale**\n\n### **Performance Highlights**\n\n- - 👤 **65 Unique Streamers**\n\n- - 🎮 **67 Different Games**\n\n- - 👀 **101,171 Completed Views**\n\n- - 📈 **1.1% CTR** (well above standard digital benchmarks)\n\n- - 🎯 **100% VTR**\n\n- - 🚫 **0% impact from ad-blockers**\n\nThe combination of **full visibility**, **unblockable delivery**, and **native presentation** created a strong engagement cycle that traditional web ads struggle to achieve.\n\n### **Platforms Activated**\n\n- **Twitch**\n\n- **Kick**\n\nBoth platforms showed strong viewer retention and consistent delivery.\n\n## **Key Results & Impact**\n\n### **1. Guaranteed Attention: 100% VTR Across All Streams**\n\nEvery viewer who saw the stream also saw the Golf Roko placement for its full duration.\n\nFor brands, this means:\n\n- - **Full creative exposure**\n\n- - **No wasted impressions**\n\n- - **Maximum recall and message reinforcement**\n\nThis is especially impactful for FMCG awareness campaigns.\n\n### **2. Zero Loss to Ad-Blockers**\n\nTraditional digital campaigns in gaming environments lose a significant portion of impressions to ad-blockers, and pay for impressions that never appear.\n\nGingerLive solved this:\n\n- - **Overlays bypass ad-block technology completely**\n\n- - **All impressions counted were real**\n\n- - **All placements were truly delivered on-screen**\n\nThis transparency and reliability became a key selling point for future clients.\n\n### **3. Above-Average CTR for Display Formats**\n\nWith a **1.1% CTR**, the campaign outperformed typical banner ads (0.1, 0.3%).\n\nThe high engagement is tied to:\n\n- - **Native placement**\n\n- - **High on-screen visibility**\n\n- - **Alignment between brand tone and gaming culture**\n\n### **4. GingerLive Proved It Could Scale**\n\nThis campaign demonstrated GingerLive’s ability to:\n\n- - **Activate dozens of creators simultaneously**\n\n- - **Manage real budgets**\n\n- - **Execute stable, high-delivery campaigns across large networks**\n\nIt was a crucial proof point that opened the door for enterprise-level clients.\n\n## **Why This Campaign Matters**\n\n### **The Campaign That Established GingerLive’s Value Proposition**\n\nGolf Roko’s activation highlighted two key advantages that remain core to GingerLive today:\n\n### ✔** 100% VTR as a Standard Performance Metric**\n\nBrands pay for ads that are truly seen, fully and reliably.\n\n### ✔** Ad-block immunity**\n\nCritical for reaching young audiences in gaming, tech, and livestream communities.\n\n### **A Sweet, Seamless Entry Into Livestream Culture**\n\nBy integrating its identity into the stream without interrupting it, Golf Roko showed how FMCG brands can succeed in the gaming world:\n\n- - **Respect the viewer**\n\n- - **Avoid disruption**\n\n- - **Use formats that cannot be skipped or hidden**\n\n- - **Deliver creative designed for the environment, not repurposed from elsewhere**\n\n## **Conclusion**\n\nThe Golf Roko x GingerLive campaign was a foundational moment in GingerLive’s evolution.\n\nBy delivering **100% view-through visibility**, **unblockable ad formats**, and **above-average CTR**, GingerLive proved that livestream overlays could outperform traditional digital media channels, long before the introduction of AI-powered contextual targeting.\n\nThis campaign set the stage for GingerLive’s future innovations, including Streamsense, real-time detection, and dynamic, moment-based advertising."
+        },
+        {
+            "slug": "gingerlive-little-caesars-campaign-case-study",
+            "title": "Little Caesars x GingerLive Announcement Campaign",
+            "url": "https://gingerlive.io/casestudies/gingerlive-little-caesars-campaign-case-study/",
+            "date": "September 15, 2025",
+            "image": "https://cdn.gingerlive.io/sitecontent/2026/07/9374858008c3fc0f.png",
+            "excerpt": "Bringing Hot Pizza Moments Into Livestreams With Real-Time Influencer EngagementIn May–June 2025, Little Caesars and GingerLive partnered to create one of the most memorable and multi-layered livestream advertising activations of the year.Combining stream-native overlay placements, real-time influen…",
+            "bodyMarkdown": "## **Bringing Hot Pizza Moments Into Livestreams With Real-Time Influencer Engagement**\n\nIn May–June 2025, **Little Caesars** and **GingerLive** partnered to create one of the most memorable and multi-layered livestream advertising activations of the year.\n\nCombining **stream-native overlay placements**, **real-time influencer reactions**, and **verified, fraud-free measurement**, the campaign delivered an authentic, high-impact brand presence across Twitch and Kick.\n\nThis was not just advertising, it was **a live pizza moment** crafted specifically for gaming culture.\n\n## **Campaign Overview**\n\nLittle Caesars wanted to reach digitally native, entertainment-focused audiences by meeting them where they spend the most time: watching and interacting with their favorite streamers.\n\nTo deliver maximum impact, GingerLive executed a two-part strategy:\n\n-\n- **Native overlay ads** placed seamlessly inside livestream content\n\n-\n- **Real-time surprise pizza deliveries** to select streamers, who then enjoyed the pizza live on stream as overlays were displayed\n\nThis combination of **creative influencer integration**, **contextual placements**, and **live authenticity** created a memorable moment that stood out from standard digital advertising.\n\n## **Objectives**\n\n### **1. Drive awareness for Little Caesars in the gaming community**\n\nReaching high-interest, stream-heavy Gen-Z and millennial consumers.\n\n### **2. Create memorable, culturally relevant brand moments**\n\nGoing beyond static ads by integrating real, live reactions from influencers.\n\n### **3. Ensure measurement accuracy through bot-free, IVT-filtered reporting**\n\nGuaranteeing that all impressions, and all engagement, came from real users.\n\n### **4. Showcase GingerLive’s ability to mix overlays with real-time creator activations**\n\nMerging tech-driven placements with physical experiences.\n\n## **About Little Caesars**\n\nLittle Caesars is one of the largest pizza chains in the world, known for its **Hot-N-Ready** offerings and bold, value-driven branding.\n\nThe company is highly active in youth culture and entertainment, making livestreaming a natural fit for its playful, community-driven tone.\n\nThis campaign brought Little Caesars’ energy directly into gaming environments, literally, through pizzas delivered during gameplay.\n\n## **Technology Spotlight: GingerLive Overlay Ads + Announcements**\n\n### **Stream-Safe, High-Visibility Overlay Formats**\n\nGingerLive deployed non-intrusive overlays positioned perfectly within the livestream interface.\n\nThis ensured:\n\n-\n- **100% visibility** during gameplay\n\n-\n- **Full VTR** (view-through-rate)\n\n-\n- **Ad-block immunity**, since overlays render inside streaming software\n\n-\n- **A consistent look across 72 streamers and 44 different games**\n\nThese overlays served as a persistent branded presence, primed for the live influencer moment.\n\n### **The Live Pizza Activation: A First-of-Its-Kind Integration**\n\nA standout element of this campaign was the **real-time pizza delivery experience**.\n\nDuring their streams:\n\n-\n- Select GingerLive creators received **surprise Little Caesars pizza deliveries**\n\n-\n- Streamers opened the boxes live, reacting authentically\n\n-\n- They tasted the pizza on-stream while the branded overlays were active\n\n-\n- Viewers experienced both the ad **and** the product simultaneously\n\nThis created an emotional, spontaneous moment that typical digital formats simply cannot produce.\n\n### **Guaranteed Real Users Through IVT Filtering**\n\nEvery metric was validated:\n\n-\n- **Invalid Traffic (IVT) filters** ensured all impressions came from real humans\n\n-\n- Bot traffic, fraud, and artificial inflation were completely excluded\n\n-\n- Reporting reflected true reach, real engagement, and accurate performance\n\nThis transparency is particularly important in gaming environments, where bot-view inflation is common on other platforms.\n\n## **Execution & Performance**\n\n### **Campaign Reach**\n\n-\n- 👤 **141,558 Unique Users Reached**\n\n-\n- 👀 **300,000+ Total Views Delivered**\n\n-\n- 🔁 **2.12 Average Frequency** (ideal for brand recall)\n\n-\n- 🎮 **72 Streamers Activated**\n\n-\n- 🕹️ **44 Different Games Featured**\n\nThe wide game variety ensured coverage across FPS titles, MOBAs, strategy, RPGs, casual games, and niche categories, maximizing audience diversity.\n\n### **Engagement Environment**\n\n-\n- Platforms used: **Twitch** and **Kick**\n\n-\n- All impressions measured using **IVT-cleaned datasets**\n\n-\n- Overlays displayed in highly visible yet non-intrusive positions\n\nViewers not only saw the brand, they experienced it.\n\n## **Key Results & Impact**\n\n### **1. A Meaningful Real-Time Consumer Moment**\n\nThe combination of on-stream pizza delivery + overlay placements created a breakthrough in-game sponsorship moment.\n\nStreamers:\n\n-\n- **Reacted authentically**\n\n-\n- **Showed the product**\n\n-\n- **Talked about the taste**\n\n-\n- **Interacted with their chat about Little Caesars in real time**\n\nThis resulted in **organic, unscripted brand advocacy**.\n\n### **2. Strong Reach With Verified Human Audiences**\n\nReaching **141,558 real, IVT-verified users** ensured that every lira of the media budget worked toward actual consumers, not bots.\n\n### **3. High Frequency With Zero Ad Fatigue**\n\nA 2.12 frequency meant:\n\n-\n- **Users saw Little Caesars more than once**\n\n-\n- **But not excessively**\n\n-\n- **Achieving a balance ideal for FMCG brand lift**\n\n### **4. Proven Power of Overlay Advertising**\n\nOverlay placements delivered:\n\n-\n- **Full visibility** (100% VTR)\n\n-\n- **Ad-block immunity**\n\n-\n- **Persistent on-screen branding**\n\n-\n- **Non-disruptive integration into gameplay**\n\nThis keeps viewer engagement high and frustration low.\n\n### **5. A Blueprint for Future Real-Time Product Integrations**\n\nThis campaign demonstrated that livestream marketing becomes drastically more powerful when **digital ads combine with real-world experiences**.\n\n## **Why This Campaign Matters**\n\n### **Shaping the Future of Food & Delivery Advertising in Livestreams**\n\nThe Little Caesars campaign proved that:\n\n-\n- **FMCG brands can drive emotional connection through real-time creator interactions**\n\n-\n- **Livestream viewers respond strongly to authentic, experiential moments**\n\n-\n- **Verified measurement is essential for credibility and performance transparency**\n\n### **A Perfect Blend of Technology + Human Experience**\n\nGingerLive delivered both:\n\n-\n- **Tech-driven reliability** via overlays, VTR, and IVT validation\n\n-\n- **Human-driven excitement** via live influencer pizza tastings\n\n-\n- **First Streamsense demonstrations**\n\nThis triple approach positions GingerLive as a platform that doesn’t just place ads, it creates culturally relevant moments.\n\n## **Conclusion**\n\nThe Little Caesars x GingerLive campaign stands out as one of the most creative, high-impact livestream advertising activations of 2025.\n\nWith **300K+ views**, **141K+ real users**, **72 creators**, and a **live pizza reveal** that turned product sampling into entertainment, the campaign exemplified how brands can thrive inside gaming ecosystems.\n\nThis project set a new benchmark for combining overlays, influencers, and real-time brand experiences, and further solidified GingerLive’s role in next-generation advertising."
+        },
+        {
+            "slug": "gingerlive-old-spice-pg-streamsense-case-study",
+            "title": "Old Spice x GingerLive Streamsense Campaign",
+            "url": "https://gingerlive.io/casestudies/gingerlive-old-spice-pg-streamsense-case-study/",
+            "date": "August 19, 2026",
+            "image": "https://gingerlive.io/Assets/referenceCompanyLogos/oldSpiceLogo.png",
+            "excerpt": "Old Spice Owns the Heat, Across Kick and TwitchFor the second campaign in its strategic partnership with Amazon Ads and WPP Media, P&G brought Old Spice into live streams with GingerLive's Streamsense Audio. Running across both Kick and Twitch, the campaign turned real, sweaty, high-energy moments i…",
+            "bodyMarkdown": "## **Old Spice Owns the Heat, Across Kick and Twitch**\n\nFor the second campaign in its strategic partnership with **Amazon Ads** and **WPP Media**, **P&G** brought **Old Spice** into live streams with GingerLive's **Streamsense Audio**. Running across both **Kick** and **Twitch**, the campaign turned real, sweaty, high-energy moments into the perfect cue for a freshness message.\n\nInstead of a fixed ad slot, Streamsense listened to what streamers were saying and served Old Spice the instant the conversation called for it, so the brand felt like a natural part of the stream.\n\n## **Campaign Overview**\n\nOld Spice wanted to own the moment of heat and freshness with a young, active audience, and to do it across more than one platform. This was the second activation of GingerLive's partnership with Amazon Ads and WPP Media, and it also carried a co-promotion for the new Mario Galaxy movie alongside the Old Spice message.\n\nBy running on both **Kick** and **Twitch**, the campaign widened its reach beyond a single platform while keeping every placement tied to a real, spoken moment through **Streamsense Audio**.\n\n## **Objectives**\n\n### **1. Own the Freshness Moment**\n\nShow up exactly when heat, sweat, and effort were the topic, so Old Spice's promise landed with perfect timing.\n\n### **2. Go Multi-Platform**\n\nProve that a single contextual campaign could run across Kick and Twitch and outperform a Twitch-only approach.\n\n### **3. Keep It Native to the Stream**\n\nServe ads inside the natural flow of live content so they added energy instead of interrupting it.\n\n## **Technology Spotlight: Streamsense Audio**\n\n### **Real-Time Keyword Detection**\n\n**Streamsense Audio** monitors many live streams at once and recognizes spoken keywords the moment they are said. When a streamer hit a relevant word, the AI triggered Old Spice creative in real time, so the ad matched what was happening on screen.\n\n### **What Triggered the Ads**\n\nAcross the campaign, the keywords that most often brought Old Spice into the moment were:\n\n-\n**\"Summer\": 54%**\n\n-\n**\"Sweat\": 24%**\n\n-\n**\"Moisture\": 7.5%**\n\nThe campaign ran on Turkish-language streams, so these are the translated equivalents of the local keywords the AI listened for.\n\n## **Execution & Delivery**\n\n### **Scale of Activation**\n\n-\n👤 **92 Streamers Activated**\n\n-\n🎥 **408 Live Streams Monitored**\n\n-\n🎮 **58 Different Games Covered**\n\n-\n👀 **566,000 Views Delivered**\n\n### **Breadth of Content**\n\nThe campaign reached far beyond a single genre. Old Spice appeared across major titles like **League of Legends**, **Valorant**, **GTA V** and **CS2**, and stretched into **IRL** and **Just Chatting** streams, meeting the audience wherever the conversation turned to heat and freshness.\n\n### **Campaign Integration**\n\nOld Spice creative was inserted in real time on both Kick and Twitch through GingerLive's browser-based overlay, rendering instantly, adding no latency for viewers, and fitting cleanly into each creator's existing setup.\n\n## **Results & Impact**\n\n### **1. A 0.5% CTR, 250% Above Twitch-Only**\n\nGoing multi-platform paid off. The campaign delivered a **0.5% click-through rate**, **250% higher** than comparable Twitch-only campaigns. Running across both Kick and Twitch put Old Spice in front of more of the right moments.\n\n### **2. 75% Better Engagement on Triggered Ads**\n\nAds served through Streamsense reached **0.7% engagement**, compared with **0.4%** for standard placements, a **75% improvement**. Context, again, beat coincidence.\n\n### **3. A Clear Desktop Audience**\n\n**85% of all clicks came from desktop**, a strong signal for how this audience engages and acts during a stream.\n\n## **Why This Campaign Matters**\n\n### **Contextual, and Multi-Platform**\n\nOld Spice proved that real-time contextual advertising is not tied to one platform. By pairing Streamsense Audio with a Kick and Twitch rollout, P&G reached the freshness moment wherever it happened and beat single-platform benchmarks doing it.\n\n-\n**One contextual campaign, two platforms, better results**\n\n-\n**Ads triggered by real talk, not fixed slots**\n\n-\n**Reach across games, IRL and Just Chatting alike**\n\n## **Conclusion**\n\nThe Old Spice campaign built on GingerLive's Amazon Ads and WPP Media partnership and pushed it further, onto a second platform. Streamsense Audio delivered 566,000 views across 408 streams, a 0.5% CTR that beat Twitch-only campaigns by 250%, and 75% stronger engagement on triggered placements.\n\nIt showed that catching the right moment works at scale, across platforms, and across the full breadth of live content."
+        },
+        {
+            "slug": "gingerlive-uip-minions-streamsense-case-study",
+            "title": "UIP Minions x GingerLive Streamsense Campaign",
+            "url": "https://gingerlive.io/casestudies/gingerlive-uip-minions-streamsense-case-study/",
+            "date": "August 19, 2026",
+            "image": "https://cdn.gingerlive.io/referenceCompanyLogos/uipLogo.webp",
+            "excerpt": "A Blockbuster Launch, Powered by Real-Time Keyword TargetingTo promote its new Minions movie, UIP turned to GingerLive for a livestream advertising campaign built on real-time context. Delivered as part of a strategic partnership with Amazon Ads and WPP Media, it was the first activation of that par…",
+            "bodyMarkdown": "## **A Blockbuster Launch, Powered by Real-Time Keyword Targeting**\n\nTo promote its new **Minions** movie, **UIP** turned to **GingerLive** for a livestream advertising campaign built on real-time context. Delivered as part of a strategic partnership with **Amazon Ads** and **WPP Media**, it was the first activation of that partnership and the first time UIP promoted a theatrical release inside live streams this way.\n\nUsing GingerLive's **Streamsense Audio** technology, the campaign listened to live streams as they happened and surfaced the Minions exactly when the conversation invited them in, so the film felt like part of the fun rather than a banner bolted on top.\n\n## **Campaign Overview**\n\nThe goal was simple and ambitious: put the new Minions movie in front of a young, engaged audience during the moments they were most receptive, without breaking the flow of the content they came to watch.\n\nThe campaign ran across Turkish live streams, where GingerLive's **Streamsense Audio** monitored spoken language in real time and triggered Minions creative the instant a relevant keyword came up. Because the trigger was tied to what streamers were actually saying, each placement landed in context.\n\n## **Objectives**\n\n### **1. Drive Awareness for a Theatrical Release**\n\nBuild buzz for the new Minions movie with the audiences that decide a film's opening, right where they spend their evenings.\n\n### **2. Reach Viewers Without Interrupting Them**\n\nServe the film inside relevant, real moments so it added to the stream instead of interrupting it.\n\n### **3. Prove Contextual AI for Entertainment Marketing**\n\nShow that real-time keyword targeting can carry a full theatrical campaign inside livestream culture.\n\n## **Technology Spotlight: Streamsense Audio**\n\n### **Real-Time Keyword Detection**\n\n**Streamsense Audio** listens across many live streams at once and recognizes spoken keywords as they are said. The moment a streamer used a relevant word, the AI activated Minions creative in the stream, so the ad matched the conversation happening on screen.\n\n### **What Triggered the Ads**\n\nAcross the campaign, the keywords that most often brought the Minions into the moment were:\n\n-\n**\"Summer\": 55%**\n\n-\n**\"Bro\": 24.5%**\n\n-\n**\"Army\": 7.6%**\n\nThe campaign ran on Turkish-language streams, so these are the translated equivalents of the local keywords the AI listened for.\n\n## **Execution & Delivery**\n\n### **Scale of Activation**\n\n-\n👤 **22 Streamers Activated**\n\n-\n🎥 **302 Live Streams Monitored**\n\n-\n🎮 **30 Different Games Covered**\n\n-\n👀 **262,000 Views Delivered**\n\n### **Campaign Integration**\n\nMinions creative was inserted in real time through GingerLive's browser-based overlay, so it rendered instantly, added no latency for viewers, and fit cleanly into each creator's existing setup.\n\n## **Results & Impact**\n\n### **1. 233% Better Engagement**\n\nThe context paid off. Ads served through Streamsense reached **0.2% engagement**, compared with **0.06%** for standard placements, a **233% improvement**. Meeting viewers in the moment beat simply showing up.\n\n### **2. A Clear Desktop Audience**\n\n**87% of all clicks came from desktop**, a useful signal for how and where this audience leans in and acts during a stream.\n\n## **Why This Campaign Matters**\n\n### **Contextual AI for the Big Screen**\n\nMovie marketing lives or dies on timing. By tying placements to what audiences were actually talking about, UIP reached film-goers at the exact moment their attention was highest, and proved that real-time contextual AI can power an entertainment launch inside live streams.\n\n-\n**The film showed up in context, not as an interruption**\n\n-\n**Real conversation, not cookies, decided the moment**\n\n-\n**A repeatable model for future theatrical releases**\n\n## **Conclusion**\n\nThe UIP Minions campaign kicked off GingerLive's partnership with Amazon Ads and WPP Media with a clear win. Streamsense Audio put the new Minions movie in front of the right viewers at the right second, delivered 262,000 views across 302 streams, and engaged audiences 233% better than standard placements.\n\nIt set the template for what came next: contextual, real-time advertising that treats live culture as a place to join, not to interrupt."
+        },
+        {
+            "slug": "gingerlive-unilever-axe-case-study",
+            "title": "Unilever Axe x GingerLive Streamsense Campaign",
+            "url": "https://gingerlive.io/casestudies/gingerlive-unilever-axe-case-study/",
+            "date": "November 01, 2025",
+            "image": "https://gingerlive.io/Assets/referenceCompanyLogos/axeLogoKnockout.webp",
+            "excerpt": "AI-Powered Contextual Targeting Meets Real-Time Livestream EntertainmentIn July–August 2025, Unilever, AXE, PHD Turkey, and GingerLive partnered to launch a media-first livestream advertising campaign powered by GingerLive’s proprietary real-time detection technology, Streamsense.The result: a groun…",
+            "bodyMarkdown": "## **AI-Powered Contextual Targeting Meets Real-Time Livestream Entertainment**\n\nIn July–August 2025, **Unilever**, **AXE**, **PHD Turkey**, and **GingerLive** partnered to launch a **media-first livestream advertising campaign** powered by GingerLive’s proprietary real-time detection technology, **Streamsense**.\n\nThe result: a groundbreaking activation that integrated AXE into livestreams not as an interruption, but as part of the moment.\n\n## **Campaign Overview**\n\nThe AXE Awareness Campaign set out to connect with Gen-Z and young male audiences where they spend the most time: **live, interactive content environments**. Traditional display ads struggle for attention in livestream culture, so AXE needed a format that blended with the streamers’ natural flow and felt native to the moment.\n\nWith **Streamsense**, GingerLive delivered exactly that, **AI-powered contextual triggers inside live content**, turning real, unscripted moments into **brand engagement opportunities**.\n\n## **Objectives**\n\n### **1. Increase Brand Awareness During Peak Summer Months**\n\nThe campaign targeted hot July–August days when AXE’s “freshness” messaging resonates the most.\n\n### **2. Deliver Non-Intrusive, High-Impact Ad Experiences**\n\nInstead of interrupting viewers, Ads were triggered during relevant moments, keywords, reactions, or events happening on screen.\n\n### **3. Showcase the Power of AI in Live Media Buying**\n\nThe goal was to demonstrate how AI can elevate FMCG advertising inside real-time entertainment environments.\n\n## **Technology Spotlight: Streamsense AI**\n\n### **Real-Time Audio + Visual Detection**\n\n**Streamsense** monitors hundreds of live streams simultaneously, detecting both:\n\n-\n- **Spoken keywords**\n\n-\n- **Visual cues and contextual events**\n\nThis dual-layer targeting allows brands to deliver messages exactly when they are contextually relevant.\n\n### **Moment-Based Ad Triggering**\n\nDuring the AXE campaign, Streamsense detected summer-related keywords such as:\n\n-\n- **“Hot”**\n\n-\n- **“A/C”**\n\n-\n- **“Sweaty”**\n\nWhen a streamer mentioned any of these in real time, the AI instantly activated:\n\n-\n- **Rich Media formats**\n\n-\n- **Dynamic chat messages**\n\nFor instance, when a streamer said \"I'm sweating like a pig\", the AI instantly activated a dynamic chat message saying \"Are you indeed sweaty? AXE is here to help you stay fresh\".\n\n-\n- **Stream-native overlays**\n\nThis transformed AXE into an **organic part of the live moment**, enhancing entertainment instead of disrupting it.\n\n## **Execution & Delivery**\n\n### **Scale of Activation**\n\n-\n\n👤 **98 Streamers Activated**\n\n-\n🎥 **2,184 Live Streams Monitored**\n\n-\n👀 **925,952 Impressions Delivered**\n\n-\n📊 **0.6% CTR** (well above typical livestream display benchmarks)\n\n### **Campaign Integration**\n\nAds were dynamically inserted across Twitch, Kick and YouTube livestreams via GingerLive’s browser-based overlay, ensuring instant rendering, minimal latency, and smooth integration with creators’ existing setups.\n\n## **Key Results & Impact**\n\n### **1. A Media-First for FMCG Advertising**\n\nThis was one of the first times globally that an FMCG brand used **real-time AI contextual targeting** inside livestreams.\n\nIt showcased how AI can transform traditional awareness campaigns into **moment-driven brand experiences**.\n\n### **2. High Engagement Through Relevance**\n\nBy triggering ads exactly when the audience was already emotionally or contextually primed:\n\n-\n- **CTR and engagement rates increased**\n\n-\n- **Viewers perceived ads as “part of the moment”**\n\n-\n- **Streamers interacted more naturally with the brand**\n\nThis **blend of context + entertainment** created a new kind of brand recall opportunity.\n\n### **3. Scalable AI Infrastructure**\n\nStreamsense processed thousands of hours of live content, proving its ability to:\n\n-\n- **Analyze audio and video in parallel**\n\n-\n- **Trigger ads with millisecond precision**\n\n-\n- **Execute campaigns across large streamer networks**\n\nThis scalability is crucial for enterprise advertisers like Unilever.\n\n## **Why This Campaign Matters**\n\n### **Redefining How Brands Show Up in Livestreams**\n\nInstead of traditional pre-rolls or disruptive mid-rolls, AXE became part of the entertainment itself. The campaign demonstrated that:\n\n-\n- **Livestream audiences value contextual, moment-driven interactions**\n\n-\n- **AI can unlock formats impossible with manual media buying**\n\n-\n- **Brands can become participants, not outsiders, in creator ecosystems**\n\n### **A Blueprint for Future Real-Time Advertising**\n\nThe AXE Awareness Campaign established a new standard for:\n\n-\n**AI-enhanced media planning**\n\n-\n- **Dynamic creative optimization inside live content**\n\n-\n- **Contextual targeting beyond cookie-based systems**\n\nIt is now a template for how brands can meaningfully connect with young, hard-to-reach audiences.\n\n## **Conclusion**\n\nThe AXE x GingerLive x Unilever partnership proved that **real-time AI targeting inside livestreams isn’t just possible, it’s powerful**. With Streamsense, AXE reached audiences where they are most engaged, delivering brand messaging that felt natural, timely, and entertaining.\n\nThis campaign marks an important milestone for digital media, showing how **AI + livestream culture** can reshape the future of advertising."
+        },
+        {
+            "slug": "gingerlive-unilever-axe-streamsense-motion-case-study",
+            "title": "Unilever Axe x GingerLive Streamsense Motion Campaign",
+            "url": "https://gingerlive.io/casestudies/gingerlive-unilever-axe-streamsense-motion-case-study/",
+            "date": "August 20, 2026",
+            "image": "https://gingerlive.io/Assets/referenceCompanyLogos/axeLogoKnockout.webp",
+            "excerpt": "A Global Media-First: The World's First Motion-Triggered Livestream CampaignBetween May and July 2026, Unilever, AXE, PHD, and GingerLive teamed up on the Axe10 Aurameter campaign, the first livestream advertising activation anywhere in the world to fire ads from automated, motion-based triggers.Ins…",
+            "bodyMarkdown": "## **A Global Media-First: The World's First Motion-Triggered Livestream Campaign**\n\nBetween May and July 2026, **Unilever**, **AXE**, **PHD**, and **GingerLive** teamed up on the **Axe10 Aurameter** campaign, the first livestream advertising activation anywhere in the world to fire ads from automated, motion-based triggers.\n\nInstead of waiting for a keyword or a scheduled break, GingerLive's **Streamsense Motion** technology watched live streams the way a person would, reading gestures, reactions, and on-screen emotion in real time, then served AXE in the exact second the moment called for it.\n\n## **Campaign Overview**\n\nAXE set out to own the moment of confidence for a young, hard-to-reach male audience that lives inside live, interactive content. Traditional display and rich media formats rarely earn attention in that environment, so AXE needed something that felt native to the stream rather than pasted on top of it.\n\nRunning across **Kick** and **Twitch**, the Axe10 Aurameter campaign paired GingerLive's brand-new **Streamsense Motion** triggers with proven **Streamsense Audio** contextual triggers, letting AXE react to both what streamers said and what they did.\n\n## **Objectives**\n\n### **1. Turn Real Emotion Into Brand Moments**\n\nReach Gen-Z men when their guard is down and their reaction is genuine, so the brand shows up as part of the fun rather than an interruption.\n\n### **2. Prove Motion-Based Targeting at Scale**\n\nShow that AI can read gestures and emotion across hundreds of concurrent streams and act on them instantly, not just in a lab demo.\n\n### **3. Move Brand Preference, Not Just Views**\n\nConvert livestream attention into measurable brand lift for AXE against a crowded field of competitors.\n\n## **Technology Spotlight: Streamsense Motion**\n\n### **Real-Time Motion and Sentiment Detection**\n\n**Streamsense Motion** analyzes the live video feed itself, detecting body language, gestures, and shifts in emotion as they happen. It reads the aura of the moment, hence the Aurameter, and turns it into a signal a brand can act on.\n\n### **From Gesture to Ad Trigger**\n\nWhen the AI recognized a relevant motion or an emotional peak, it instantly activated AXE creative inside the stream: rich media formats, stream-native overlays, and dynamic chat messages that fit the moment. Because the trigger came from the action on screen, the ad landed exactly when it felt earned.\n\n### **Motion and Audio, Working Together**\n\nAxe10 Aurameter was also the first GingerLive campaign to run **Streamsense Motion and Streamsense Audio side by side**. While Motion read gestures and emotion, Audio listened for contextually relevant keywords, giving AXE two independent, complementary ways to catch the right second.\n\n## **What Streamsense Detected**\n\nStreamsense pinpointed players' most thrilling, successful, and strategic moments and turned each one into a high-impact brand touchpoint. Across the campaign, the real moments it captured broke down like this:\n\n-\n**Critical Game Moment: 35.2%**, the intense phases that decide a match, where AXE reinforced its promise of confidence under pressure\n\n-\n**Tactical Preparation: 19.3%**, the focused planning stage, where AXE earned attention with a memorable brand presence\n\n-\n**Positive Emotion: 12.3%**, moments of success and celebration that strengthened AXE's emotional connection with viewers\n\n-\n**Round Victory: 11.1%**\n\n-\n**Team Success: 9.1%**\n\n-\n**Successful Action: 7.4%**\n\n-\n**Outstanding Performance: 5.5%**\n\n## **Execution & Delivery**\n\n### **Scale of Activation**\n\n-\n👤 **111 Streamers Activated**\n\n-\n🎮 **130 Content Categories Covered**\n\n-\n🎥 **1,300 Live Streams Monitored**\n\n-\n👀 **2.7 Million Views Delivered**\n\n### **Campaign Integration**\n\nAXE creative was inserted in real time across Kick and Twitch through GingerLive's browser-based overlay, so it rendered instantly, added no latency for viewers, and slotted cleanly into each creator's existing setup.\n\n## **Results & Brand Impact**\n\n### **1. 99.5% of the Live Audience Stayed**\n\nGingerLive compared instant viewer counts immediately before and after every ad impression. Thanks to Streamsense's smart triggers, AXE held a **99.5% average retained live audience**, connecting with viewers at the exact moment their attention peaked instead of chasing it away.\n\n### **2. Gestures and Emotion Drove the Clicks**\n\nThe data made the winning formula obvious. Ranked by click-through rate, emotional reactions and gestures were the strongest conversion drivers in the real-time trigger pool:\n\n-\n**Gesture: 2.86**\n\n-\n**Emotion: 2.81**\n\n-\n**In-Game Actions: 2.74**\n\n-\n**Win / Victory Moments: 2.29**\n\n-\n**In-Game Situations: 1.52**\n\nReading gestures and facial expressions let AXE go beyond in-game events and show up at the most unforgettable, high-excitement moments of the broadcast.\n\n### **3. 225% Higher Engagement**\n\nMotion-triggered AXE placements drove **225% more engagement** than standard display and rich media formats, proof that a well-timed, context-aware ad beats a merely well-placed one.\n\n### **4. A Decisive Brand Lift**\n\nAn independent Brand Lift Study told the clearest story of all:\n\n-\n📊 AXE preference before the campaign: **20.4%**\n\n-\n📈 AXE preference after the campaign: **36%**\n\n-\n🏆 An **80% lead** in preference over competing brands\n\n### **5. The Audience Reacted, Loudly**\n\nBecause the natural flow of every stream was fully preserved, a genuine emotional bond formed between the audience and the brand. Viewers did not just watch the ad. With authentic reactions praising the product and showing immediate purchase intent, AXE became the main topic of conversation in chat.\n\n## **Why This Campaign Matters**\n\n### **A New Trigger for Live Advertising**\n\nKeyword and schedule-based advertising can only react to words and clocks. By reading motion and emotion, Streamsense Motion opens up a category of moments that were previously impossible to target, and it does so at the speed of live.\n\n-\n**Brands can react to what people do, not only what they say**\n\n-\n**Ads arrive as part of the entertainment, not on top of it**\n\n-\n**Context replaces cookies as the targeting signal**\n\n## **Conclusion**\n\nThe Axe10 Aurameter campaign proved that livestream advertising can read the room and act on it in real time. With Streamsense Motion, AXE reached Gen-Z at the peak of genuine emotion, held 99.5% of the live audience, lifted brand preference from 20.4% to 36%, and set a global first that redraws what the right moment means in advertising.\n\nFor GingerLive, it is more than a milestone. It is the blueprint for how brands will show up inside live culture next."
+        },
+        {
+            "slug": "turknet-x-gingerlive-case-study-gen-z-livestream-advertising-campaign",
+            "title": "Turknet x GingerLive: Reaching Gen-Z Where They Actually Live",
+            "url": "https://gingerlive.io/casestudies/turknet-x-gingerlive-case-study-gen-z-livestream-advertising-campaign/",
+            "date": "April 07, 2026",
+            "image": "https://cdn.gingerlive.io/sitecontent/2026/07/d58a843bc7af1a90.png",
+            "excerpt": "How Turknet Brought Its Speed Story Into Livestreams Through Streamer-Native Ads and Real-Time AnnouncementsIn a media landscape where Gen-Z has become increasingly resistant to traditional and social advertising, Turknet turned to GingerLive to open a new channel entirely: the live stream.Over five…",
+            "bodyMarkdown": "## How Turknet Brought Its Speed Story Into Livestreams Through Streamer-Native Ads and Real-Time Announcements\n\nIn a media landscape where Gen-Z has become increasingly resistant to traditional and social advertising, **Turknet** turned to **GingerLive** to open a new channel entirely: the live stream.\n\nOver five months, the two companies ran a continuous, always-on campaign combining **Rich Media Overlays**, **Native Recommendations**, and **real-time Announcements,** placing Turknet's message directly inside the content Gen-Z was already watching, in the voice of the streamers they already trusted.\n\nThe result: **~1.8 million impressions**, a **~99% view-through rate**, **2,606 measurable queries**, and a CTR that kept climbing every single month.\n\n## Campaign Overview\n\nTurknet's core challenge was a familiar one for telco brands: how do you communicate speed, value, and reliability to an audience that skips every ad it can?\n\nGen-Z doesn't just ignore traditional media; they've built infrastructure to avoid it. Ad blockers, subscription tiers, and content skipping. Standard social placements increasingly feel like interruptions.\n\nGingerLive's approach was to make the ad part of the stream itself. Instead of interrupting the viewing experience, Turknet's message was embedded inside it, through **streamer-native overlays** that appear directly within the broadcast feed, and **Announcement activations** where streamers delivered Turknet's speed and pricing message in their own words, in real time.\n\nThe campaign ran across **71 streamers**, **968 live streams**, and **77 different content categories**, sustaining presence across a diverse range of gaming, entertainment, and lifestyle content from October through February.\n\n## Objectives\n\n### 1. Reach Gen-Z Outside the Reach of Standard Media\n\nMove beyond the diminishing returns of social and display advertising by activating inside the platforms and content formats Gen-Z actually engages with: live streams on Twitch and Kick.\n\n### 2. Communicate Turknet's Speed and Value Proposition Authentically\n\nTurknet's message, up to 1000 Mbps, and competitive pricing, needed to land with credibility. The campaign bet that streamer voices would carry that message more convincingly than any brand creative.\n\n### 3. Build Performance Through Continuous Optimization\n\nRather than a burst campaign, Turknet committed to an always-on strategy, enabling GingerLive to identify the highest-performing streamers and continuously shift weight toward them month over month.\n\n### 4. Demonstrate Measurable Conversion Beyond Awareness\n\nProve that live stream advertising can drive bottom-of-funnel results, not just brand impressions.\n\n## About Turknet\n\nTurknet is one of Turkey's leading internet service providers, known for its fibre infrastructure, competitive speed tiers, and a brand positioning built around performance and reliability. With a growing focus on digital-native customer acquisition, Turknet recognized that reaching the next generation of broadband customers required going where that generation spends its time, and its attention.\n\n## Campaign Strategy: Three Formats, One Coherent Presence\n\n### Rich Media Overlays; Always-On Visibility\n\nDynamic creatives were embedded directly into the live stream feed, delivering **high-visibility brand exposure** without disrupting playback. Because overlays render inside the streaming software itself, they are fully immune to ad blockers, ensuring every planned impression actually reaches a viewer.\n\n### Native Recommendations; Seamless Integration\n\nNative Recommendations placements blended Turknet's message into the content environment organically, matching the visual and contextual tone of each stream rather than standing apart from it.\n\n### Announcements; Authenticity at Scale\n\nThe campaign's most distinctive element. Selected streamers delivered **real-time verbal announcements** about Turknet — its speeds, its pricing, its advantages — in their own language, in the flow of their own content. Viewers heard about a 1000 Mbps connection from someone they watch every day, not from a brand. That difference in source credibility is measurable.\n\n## Execution & Performance\n\n### Campaign Footprint\n\n- 📡 **~1,800,000 Total Impressions**\n\n- 🎯 **~99% View-Through Rate (VTR)**\n\n- 🔍 **2,606 Total Measurable Queries**\n\n- 👤 **71 Unique Streamers Activated**\n\n- 🎮 **968 Total Broadcasts**\n\n- 🗂️ **77 Different Content Categories**\n\n- 🖥️ **88.2% Desktop Click Share**\n\n### Monthly Performance Breakdown\n\n| Month | Impressions | CTR (%) |\n| --- | --- | --- |\n| October | 309,280 | 0.4 |\n| November | 330,139 | 0.5 |\n| December | 278,913 | 0.7 |\n| January | 554,919 | 0.7 |\n| February | 322,868 | 1.1 |\n\nCTR more than doubled from the campaign's first month to its last, without any increase in budget or creative pressure. The gain was driven entirely by **streamer optimization**: identifying which streamers drove the most engaged clicks, and gradually concentrating delivery toward them.\n\n## Key Results & Impact\n\n### 1. CTR Growth Independent of Budget or Duration\n\nThe single most important result of this campaign is the CTR trajectory. October: 0.4%. February: 1.1%. This is not the result of increased spend, refreshed creative, or seasonal uplift. It is the direct output of **data-driven streamer selection** compounding over time, and it demonstrates that GingerLive's optimization layer becomes more powerful the longer a campaign runs.\n\n### 2. Streamer Optimization Is as Effective as Audience Targeting\n\nTraditional digital campaigns lean on demographic and behavioral data to reach the right person. This campaign demonstrated an alternative: **optimize for the right streamer**, and the right audience follows. Streamer affinity, community composition, and content context act as a proxy for precise audience targeting, without requiring user-level data.\n\n### 3. Always-On Performance Improves, Not Decays\n\nCampaign fatigue is a structural concern for long-running digital campaigns. Here, the opposite happened. Performance grew. This is because GingerLive's optimization model uses impression volume as a signal, and the more data it accumulates, the better the allocation. Always-on is not just a media strategy; it is an optimization strategy.\n\n### 4. Measurable Conversion Beyond the Awareness Phase\n\n2,606 tracked queries represent users who moved from exposure to active interest. This is a material conversion signal for a telco campaign, particularly one running in a context (live streaming) not traditionally associated with direct response. With the right optimization, GingerLive can deliver performance at every stage of the funnel.\n\n### 5. High Desktop Intent\n\n88.2% of all clicks came from desktop environments — consistent with the behavior of engaged live stream viewers who are both watching content and browsing simultaneously. This is a high-intent click profile.\n\n## Key Takeaways\n\n**Streamer optimization is as powerful as data targeting.** When you optimize toward the right creators, the right audience self-selects. Community fit is a targeting signal.\n\n**Always-on campaigns gain, not lose, performance over time.** The optimization flywheel needs data to spin, and it rewards brands that stay in the market.\n\n**Below 300,000 impressions, optimization headroom is limited.** Scale matters. The campaign's best months were its most optimizable months.\n\n**GingerLive can deliver conversion beyond awareness.** 2,606 measurable queries from a live stream campaign is a direct-response result. The funnel doesn't stop at brand recall.\n\n**More streamers, more optimization, better engagement.** The breadth of the streamer network, 71 creators across 77 content categories, is what made granular optimization possible.\n\n## Why This Campaign Matters\n\n### A New Channel for Telco in the Gen-Z Era\n\nTurknet's challenge is the telco industry's challenge: how do you earn attention from a generation that treats connectivity as infrastructure and advertising as noise? This campaign answered it by becoming content rather than interrupting it.\n\n### Proof That Live Streaming Is a Full-Funnel Medium\n\nThe industry has been slow to position live streaming as anything beyond a brand awareness play. This campaign produced 2,606 measurable queries. That is a conversion metric. GingerLive and Turknet have demonstrated, with data, that the funnel extends deeper than the impression.\n\n## Conclusion\n\nThe Turknet x GingerLive campaign is a blueprint for how a performance-minded brand can activate inside live streaming and measure results at every stage of the funnel.\n\nWith **~1.8M impressions**, a **99% VTR**, **2,606 direct queries**, and a CTR that grew from 0.4% to 1.1% through nothing but streamer optimization, this campaign proved that live stream advertising rewards patience, scale, and smart allocation.\n\nTurknet met Gen-Z where they live. And Gen-Z responded."
+        }
+    ],
+    "resourceGuides": [
+        {
+            "slug": "livestream-advertising",
+            "title": "Livestream Advertising: The Complete 2026 Guide",
+            "url": "https://gingerlive.io/resources/livestream-advertising/",
+            "description": "What livestream advertising is, why brands use it to reach Gen Z, the main ad formats (overlays, banners, chat drops, sponsorships), how targeting and measurement work, and what it costs.",
+            "audience": "brands",
+            "related": [
+                "twitch-advertising",
+                "gen-z-advertising",
+                "esports-sponsorship"
+            ]
+        },
+        {
+            "slug": "livestream-advertising-cost",
+            "title": "How Much Does Livestream Advertising Cost?",
+            "url": "https://gingerlive.io/resources/livestream-advertising-cost/",
+            "description": "How livestream advertising is priced — CPM vs per-activation, the seven factors that move rates, how network buying compares to direct sponsorships, and how to build a realistic budget.",
+            "audience": "brands",
+            "related": [
+                "twitch-advertising",
+                "livestream-advertising",
+                "twitch-vs-kick-vs-youtube-vs-tiktok"
+            ]
+        },
+        {
+            "slug": "twitch-advertising",
+            "title": "How to Advertise on Twitch: Formats, Costs and Alternatives (2026)",
+            "url": "https://gingerlive.io/resources/twitch-advertising/",
+            "description": "The three ways to advertise on Twitch — official Twitch ads, direct streamer sponsorships, and in-stream ad networks — compared by cost model, targeting, scalability and measurement.",
+            "audience": "brands",
+            "related": [
+                "livestream-advertising",
+                "gen-z-advertising",
+                "streamer-sponsorships"
+            ]
+        },
+        {
+            "slug": "advertise-on-kick",
+            "title": "How to Advertise on Kick",
+            "url": "https://gingerlive.io/resources/advertise-on-kick/",
+            "description": "Why Kick attracted a fast-growing streamer base, the realistic routes for brands to advertise there, how it differs from Twitch for advertisers, and what to watch for on brand safety.",
+            "audience": "brands",
+            "related": [
+                "twitch-advertising",
+                "twitch-vs-kick-vs-youtube-vs-tiktok",
+                "livestream-advertising-cost"
+            ]
+        },
+        {
+            "slug": "twitch-vs-kick-vs-youtube-vs-tiktok",
+            "title": "Twitch vs Kick vs YouTube Live vs TikTok LIVE: Which Should You Advertise On?",
+            "url": "https://gingerlive.io/resources/twitch-vs-kick-vs-youtube-vs-tiktok/",
+            "description": "The four major livestream platforms compared for advertisers — audience, content culture, available ad routes, measurement maturity and brand safety — plus when to use each.",
+            "audience": "brands",
+            "related": [
+                "twitch-advertising",
+                "advertise-on-kick",
+                "livestream-advertising-cost"
+            ]
+        },
+        {
+            "slug": "gen-z-advertising",
+            "title": "Gen Z Advertising: Reaching the Generation That Doesn't Watch TV",
+            "url": "https://gingerlive.io/resources/gen-z-advertising/",
+            "description": "Where Gen Z actually spends its attention, why traditional channels miss it, what the research says about brand receptivity in streaming, and which formats work — with 2026 data.",
+            "audience": "brands",
+            "related": [
+                "livestream-advertising",
+                "twitch-advertising",
+                "esports-sponsorship"
+            ]
+        },
+        {
+            "slug": "esports-sponsorship",
+            "title": "Esports Sponsorship in 2026: Formats, Costs and Measurement",
+            "url": "https://gingerlive.io/resources/esports-sponsorship/",
+            "description": "How esports sponsorship works in 2026: the formats (team, event, broadcast, moment-based), what drives pricing, how exposure is measured, and why sponsor-moment activation is the premium slice.",
+            "audience": "brands",
+            "related": [
+                "livestream-advertising",
+                "gen-z-advertising",
+                "twitch-advertising"
+            ]
+        },
+        {
+            "slug": "livestream-advertising-vs-influencer-marketing",
+            "title": "Livestream Advertising vs Influencer Marketing",
+            "url": "https://gingerlive.io/resources/livestream-advertising-vs-influencer-marketing/",
+            "description": "How livestream advertising and influencer marketing differ — what you actually buy, how each is priced and measured, how they scale, and when to use one, the other, or both.",
+            "audience": "brands",
+            "related": [
+                "livestream-advertising",
+                "in-stream-ad-network-vs-direct-sponsorship",
+                "streamer-sponsorships"
+            ]
+        },
+        {
+            "slug": "livestream-advertising-vs-programmatic-video",
+            "title": "Livestream Advertising vs Programmatic Video Ads",
+            "url": "https://gingerlive.io/resources/livestream-advertising-vs-programmatic-video/",
+            "description": "How livestream advertising compares to programmatic video (pre-roll, mid-roll and outstream display): where the ad runs, skippability, viewability, targeting without cookies, cost and when to use each.",
+            "audience": "brands",
+            "related": [
+                "livestream-advertising",
+                "livestream-advertising-cost",
+                "gen-z-advertising"
+            ]
+        },
+        {
+            "slug": "livestream-advertising-vs-podcast-advertising",
+            "title": "Livestream Advertising vs Podcast Advertising",
+            "url": "https://gingerlive.io/resources/livestream-advertising-vs-podcast-advertising/",
+            "description": "Livestream advertising and podcast advertising both reach engaged, ad-avoidant audiences through creators. How they differ on format, interactivity, targeting, measurement and cost — and when to use each.",
+            "audience": "brands",
+            "related": [
+                "livestream-advertising",
+                "gen-z-advertising",
+                "livestream-advertising-vs-influencer-marketing"
+            ]
+        },
+        {
+            "slug": "in-stream-ad-network-vs-direct-sponsorship",
+            "title": "In-Stream Ad Network vs Direct Sponsorship",
+            "url": "https://gingerlive.io/resources/in-stream-ad-network-vs-direct-sponsorship/",
+            "description": "Two ways to advertise across live streams: run one campaign across many channels through an in-stream ad network, or sponsor streamers one by one. How they compare on scale, effort, control, measurement and cost.",
+            "audience": "brands",
+            "related": [
+                "streamer-sponsorships",
+                "twitch-advertising",
+                "livestream-advertising-vs-influencer-marketing"
+            ]
+        },
+        {
+            "slug": "livestream-advertising-benchmarks",
+            "title": "Livestream Advertising Benchmarks: Real Campaign Results",
+            "url": "https://gingerlive.io/resources/livestream-advertising-benchmarks/",
+            "description": "Performance benchmarks for livestream advertising, drawn from GingerLive's own published campaigns: view-through rate, completion, click-through rate and reach across Twitch, Kick, YouTube and TikTok.",
+            "audience": "brands",
+            "related": [
+                "livestream-advertising",
+                "livestream-advertising-cost",
+                "livestream-advertising-vs-programmatic-video"
+            ]
+        },
+        {
+            "slug": "how-to-make-money-streaming",
+            "title": "How to Make Money Streaming: Every Revenue Stream Compared (2026)",
+            "url": "https://gingerlive.io/resources/how-to-make-money-streaming/",
+            "description": "The eight ways streamers earn on Twitch, Kick, YouTube and TikTok — subscriptions, bits and gifts, platform ads, donations, sponsorships, affiliate, merch and in-stream ad networks — compared honestly.",
+            "audience": "streamers",
+            "related": [
+                "streamer-sponsorships",
+                "twitch-advertising"
+            ]
+        },
+        {
+            "slug": "streamer-sponsorships",
+            "title": "How to Get Sponsorships as a Streamer (Even a Small One)",
+            "url": "https://gingerlive.io/resources/streamer-sponsorships/",
+            "description": "The four realistic paths to streamer sponsorships — direct outreach, marketplaces, agencies and ad networks — what brands actually look for, what to charge, and the mistakes that kill deals.",
+            "audience": "streamers",
+            "related": [
+                "how-to-make-money-streaming",
+                "twitch-advertising"
+            ]
+        }
+    ],
+    "streamerProgram": {
+        "cost": "Free — GingerLive earns from advertiser budgets, not from streamers.",
+        "howItWorks": [
+            {
+                "title": "Connect your account",
+                "desc": "Sign up in seconds with your Twitch, Kick, YouTube or TikTok account. Add a single browser source to OBS or Streamlabs and the setup is done."
+            },
+            {
+                "title": "Ads place themselves",
+                "desc": "Our system picks the advertiser campaigns that best match your audience and shows them at the right moments, without breaking your stream's flow."
+            },
+            {
+                "title": "Track your earnings",
+                "desc": "Watch your impressions and revenue live from your dashboard. You focus on streaming while GingerLive handles the rest."
+            }
+        ],
+        "platforms": [
+            "Twitch",
+            "Kick",
+            "YouTube Live",
+            "TikTok Live"
+        ],
+        "signupUrl": "https://gingerlive.io/streamer/",
+        "moreInfoUrl": "https://gingerlive.io/streamers/"
+    }
+}

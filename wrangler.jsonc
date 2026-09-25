@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gingerlive-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "GINGERLIVE_MCP", "class_name": "GingerLiveMCP" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["GingerLiveMCP"] }],
+
+  // Custom domain: auto-creates the mcp.gingerlive.io DNS record + edge cert on the
+  // Cloudflare-managed zone at deploy time. The *.workers.dev URL keeps working too.
+  "routes": [{ "pattern": "mcp.gingerlive.io", "custom_domain": true }]
+}

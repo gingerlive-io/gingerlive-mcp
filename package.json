@@ -1,0 +1,28 @@
+{
+  "name": "gingerlive-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GingerLive's public, read-only MCP server — livestream advertising data for AI assistants. Runs on Cloudflare Workers at mcp.gingerlive.io.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "agents": "^0.21.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260818.1",
+    "wrangler": "^4.124.0"
+  },
+  "homepage": "https://gingerlive.io/developers/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gingerlive-io/gingerlive-mcp.git"
+  },
+  "license": "MIT"
+}
