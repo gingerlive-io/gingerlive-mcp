@@ -7,20 +7,23 @@
  * builds llms.txt, so the tools
  * can never drift from the site or expose anything non-public. No auth, no writes in
  * P0 — a campaign-brief write path and OAuth are planned.
+ * Each tool call is logged to D1 (USAGE_DB) for coverage analysis; see src/usage.ts.
  */
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { McpAgent } from "agents/mcp";
 import { registerGingerLive, SERVER_VERSION } from "./server";
+import { d1Sink } from "./usage";
 
 interface Env {
   GINGERLIVE_MCP: DurableObjectNamespace;
+  USAGE_DB: D1Database;
 }
 
 export class GingerLiveMCP extends McpAgent<Env> {
   server = new McpServer({ name: "GingerLive", version: SERVER_VERSION });
 
   async init() {
-    registerGingerLive(this.server);
+    registerGingerLive(this.server, d1Sink(this.env.USAGE_DB));
   }
 }
 
@@ -71,6 +74,13 @@ const jsonHeaders = {
 };
 
 export default {
+  // Daily cron (wrangler.jsonc): enforce the 12-month retention stated on gingerlive.io/privacy/.
+  async scheduled(_controller: ScheduledController, env: Env) {
+    await env.USAGE_DB.prepare("DELETE FROM tool_calls WHERE ts < ?")
+      .bind(new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString())
+      .run();
+  },
+
   fetch(request: Request, env: Env, ctx: ExecutionContext) {
     const url = new URL(request.url);
 

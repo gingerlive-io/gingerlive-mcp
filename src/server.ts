@@ -5,18 +5,88 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import data from "./data/agent-data.json";
+import type { UsageSink } from "./usage";
 
-export const SERVER_VERSION = "0.2.2";
+export const SERVER_VERSION = "0.3.0";
 
 /** Wrap a JSON-serializable value in the MCP text-result envelope. */
 const json = (value: unknown) => ({
   content: [{ type: "text" as const, text: JSON.stringify(value, null, 2) }],
 });
 
-export function registerGingerLive(server: McpServer) {
+type ToolResult = { content: { type: "text"; text: string }[]; isError?: boolean };
+type ToolConfig = {
+  title: string;
+  description: string;
+  annotations: Record<string, boolean>;
+  inputSchema: Record<string, z.ZodType>;
+};
+
+/**
+ * Optional on every tool. Lets us see what people are trying to get done through the
+ * server (and what it can't answer yet) without seeing their conversation.
+ */
+const intentParam = z
+  .string()
+  .max(300)
+  .optional()
+  .describe(
+    "Optional: one short sentence on what the user is trying to accomplish, e.g. " +
+      "'compare ad formats for a gaming product launch in Turkey'. Used only to improve " +
+      "this server's coverage. Do not include names, emails or other personal data.",
+  );
+
+const header = (headers: Record<string, string | string[] | undefined> | undefined, name: string) => {
+  const value = headers?.[name];
+  return (Array.isArray(value) ? value[0] : value) ?? null;
+};
+
+export function registerGingerLive(server: McpServer, logUsage?: UsageSink) {
   const company = data.company;
 
-  server.registerTool(
+  /** server.registerTool plus the `intent` parameter and a usage-log row per call. */
+  const registerTool = (
+    name: string,
+    config: ToolConfig,
+    handler: (args: any) => ToolResult | Promise<ToolResult>,
+  ) => {
+    server.registerTool(
+      name,
+      { ...config, inputSchema: { ...config.inputSchema, intent: intentParam } },
+      async ({ intent, ...args }: { intent?: string; [key: string]: unknown }, extra) => {
+        const started = Date.now();
+        let isError = true;
+        try {
+          const result = await handler(args);
+          isError = Boolean(result.isError);
+          return result;
+        } finally {
+          if (logUsage) {
+            const client = server.server.getClientVersion();
+            const headers = extra.requestInfo?.headers;
+            try {
+              await logUsage({
+                sessionId: extra.sessionId ?? null,
+                clientName: client?.name ?? null,
+                clientVersion: client?.version ?? null,
+                tool: name,
+                args,
+                intent: intent?.trim() || null,
+                isError,
+                durationMs: Date.now() - started,
+                country: header(headers, "cf-ipcountry"),
+                userAgent: header(headers, "user-agent"),
+              });
+            } catch (err) {
+              console.error("usage log failed", err);
+            }
+          }
+        }
+      },
+    );
+  };
+
+  registerTool(
     "get_company_overview",
     {
       title: "Company overview",
@@ -37,7 +107,7 @@ export function registerGingerLive(server: McpServer) {
       }),
   );
 
-  server.registerTool(
+  registerTool(
     "get_network_stats",
     {
       title: "Network stats",
@@ -49,7 +119,7 @@ export function registerGingerLive(server: McpServer) {
     async () => json(data.networkStats),
   );
 
-  server.registerTool(
+  registerTool(
     "list_ad_formats",
     {
       title: "Ad formats",
@@ -61,7 +131,7 @@ export function registerGingerLive(server: McpServer) {
     async () => json({ formats: data.adFormats, badges: data.adFormatBadges }),
   );
 
-  server.registerTool(
+  registerTool(
     "list_case_studies",
     {
       title: "List case studies",
@@ -82,7 +152,7 @@ export function registerGingerLive(server: McpServer) {
       ),
   );
 
-  server.registerTool(
+  registerTool(
     "get_case_study",
     {
       title: "Get a case study",
@@ -120,7 +190,7 @@ export function registerGingerLive(server: McpServer) {
     },
   );
 
-  server.registerTool(
+  registerTool(
     "get_streamer_program_info",
     {
       title: "Streamer program",

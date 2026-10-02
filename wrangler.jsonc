@@ -12,6 +12,19 @@
   },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["GingerLiveMCP"] }],
 
+  // Tool-call usage log (src/usage.ts). Schema: migrations/0001_tool_calls.sql,
+  // applied with `npx wrangler d1 migrations apply gingerlive-mcp-usage --remote`.
+  "d1_databases": [
+    {
+      "binding": "USAGE_DB",
+      "database_name": "gingerlive-mcp-usage",
+      "database_id": "c25c9458-8db1-44dd-b80c-8a6eaac1507e",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Daily usage-log retention cleanup (scheduled() in src/index.ts).
+  "triggers": { "crons": ["17 3 * * *"] },
+
   // Custom domain: auto-creates the mcp.gingerlive.io DNS record + edge cert on the
   // Cloudflare-managed zone at deploy time. The *.workers.dev URL keeps working too.
   "routes": [{ "pattern": "mcp.gingerlive.io", "custom_domain": true }]

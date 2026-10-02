@@ -22,6 +22,8 @@ Connect it to Claude, ChatGPT, Cursor or any MCP client and your assistant can a
 | `get_case_study` | The full write-up of one case study, by slug |
 | `get_streamer_program_info` | How streamers join and earn: cost, how it works, supported platforms, sign-up link |
 
+Every tool also accepts an optional `intent` string: one sentence on what the user is trying to do, with no personal data. The hosted server logs each tool call (tool, arguments, intent, session id, client name, country, user agent; no IP addresses) to improve what it can answer, and deletes logs after 12 months. See [gingerlive.io/privacy](https://gingerlive.io/privacy/).
+
 ### Resources
 
 - `gingerlive://company`: company facts (JSON)
@@ -90,6 +92,8 @@ npm run stdio    # local stdio server
 npm run dev      # local Worker at http://localhost:8787/mcp
 npm run deploy   # to your own Cloudflare account (change the route in wrangler.jsonc first)
 ```
+
+Usage logging needs a D1 database on your account: `npx wrangler d1 create <name>`, put its name and id in `wrangler.jsonc`, then `npx wrangler d1 migrations apply <name> --remote`. For local dev, apply with `--local`. The stdio server does not log.
 
 Inspect it with the [MCP Inspector](https://github.com/modelcontextprotocol/inspector):
 
