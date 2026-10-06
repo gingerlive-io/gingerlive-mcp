@@ -10,6 +10,7 @@
  * Each tool call is logged to D1 (USAGE_DB) for coverage analysis; see src/usage.ts.
  */
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { SUPPORTED_PROTOCOL_VERSIONS } from "@modelcontextprotocol/sdk/types.js";
 import { McpAgent } from "agents/mcp";
 import { registerGingerLive, SERVER_VERSION } from "./server";
 import { d1Sink } from "./usage";
@@ -30,9 +31,11 @@ export class GingerLiveMCP extends McpAgent<Env> {
 const HOME = `GingerLive MCP server.
 
 Model Context Protocol endpoint (Streamable HTTP): /mcp
+Server card (SEP-2127): /mcp/server-card
 Health check: /health
 SEP-1960 manifest: /.well-known/mcp
 Registry card: /.well-known/mcp.json
+Domain discovery (AI Catalog): https://gingerlive.io/.well-known/ai-catalog.json
 
 Read-only tools: get_company_overview, get_network_stats, list_ad_formats,
 list_case_studies, get_case_study, get_streamer_program_info.
@@ -65,6 +68,67 @@ const MCP_MANIFEST = {
   registration: { dynamic: false },
   documentation: "https://gingerlive.io/developers/",
 };
+
+// SEP-2127 (Final) MCP Server Card, per modelcontextprotocol/ext-server-card: identity and
+// how to connect, served at <streamable-http-url>/server-card as
+// application/mcp-server-card+json. Deliberately identity-only (SEP-2127 cards do not list
+// tools; the legacy SEP-1649 catalog on gingerlive.io still does). Protocol versions come
+// from the SDK the server negotiates with, so the card cannot drift from runtime behavior.
+// Domain-level discovery: https://gingerlive.io/.well-known/ai-catalog.json points here.
+const SERVER_CARD = {
+  $schema: "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  name: "io.gingerlive/mcp",
+  version: SERVER_VERSION,
+  title: "GingerLive",
+  // Same text as server.json (the registry entry): the schema caps it at 100 characters.
+  description: "GingerLive livestream ad formats, network reach stats, campaign case studies, and streamer program.",
+  websiteUrl: "https://gingerlive.io",
+  repository: { url: "https://github.com/gingerlive-io/gingerlive-mcp", source: "github" },
+  icons: [
+    {
+      src: "https://gingerlive.io/Assets/Icons/GingerLiveIcons/squareLogo.png",
+      sizes: ["640x640"],
+      mimeType: "image/png",
+    },
+  ],
+  remotes: [
+    {
+      type: "streamable-http",
+      url: "https://mcp.gingerlive.io/mcp",
+      supportedProtocolVersions: [...SUPPORTED_PROTOCOL_VERSIONS],
+    },
+  ],
+};
+const SERVER_CARD_BODY = JSON.stringify(SERVER_CARD, null, 2);
+// Strong validator derived from the body (FNV-1a), so it changes whenever the card does.
+const SERVER_CARD_ETAG = `"sc-${[...SERVER_CARD_BODY].reduce((h, c) => Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0, 2166136261).toString(16)}"`;
+const serverCardCors = {
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET",
+  "access-control-allow-headers": "Content-Type, If-None-Match",
+  "access-control-expose-headers": "ETag",
+};
+
+function serveServerCard(request: Request): Response {
+  if (request.method === "OPTIONS") {
+    return new Response(null, { status: 204, headers: { ...serverCardCors, "access-control-max-age": "86400" } });
+  }
+  if (request.method !== "GET" && request.method !== "HEAD") {
+    return new Response(null, { status: 405, headers: { ...serverCardCors, allow: "GET, HEAD, OPTIONS" } });
+  }
+  const headers = {
+    ...serverCardCors,
+    "content-type": "application/mcp-server-card+json",
+    "cache-control": "public, max-age=3600",
+    etag: SERVER_CARD_ETAG,
+    "x-content-type-options": "nosniff",
+  };
+  const ifNoneMatch = request.headers.get("if-none-match");
+  if (ifNoneMatch && ifNoneMatch.split(",").some((tag) => tag.trim().replace(/^W\//, "") === SERVER_CARD_ETAG)) {
+    return new Response(null, { status: 304, headers });
+  }
+  return new Response(request.method === "HEAD" ? null : SERVER_CARD_BODY, { headers });
+}
 
 const jsonHeaders = {
   "content-type": "application/json; charset=utf-8",
@@ -104,6 +168,11 @@ export default {
       return new Response(HOME, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
+    // Must precede the /mcp/ transport route below, which would otherwise swallow it.
+    if (url.pathname === "/mcp/server-card") {
+      return serveServerCard(request);
+    }
+
     // Streamable HTTP transport (recommended for external clients).
     if (url.pathname === "/mcp" || url.pathname.startsWith("/mcp/")) {
       return GingerLiveMCP.serve("/mcp", { binding: "GINGERLIVE_MCP" }).fetch(request, env, ctx);
@@ -116,7 +185,7 @@ export default {
       detail: `No resource at ${url.pathname} on the GingerLive MCP host.`,
       code: "not_found",
       instance: url.pathname,
-      hint: "Use POST/GET https://mcp.gingerlive.io/mcp (Streamable HTTP), GET /health, or GET /.well-known/mcp. Docs: https://gingerlive.io/developers/",
+      hint: "Use POST/GET https://mcp.gingerlive.io/mcp (Streamable HTTP), GET /mcp/server-card, GET /health, or GET /.well-known/mcp. Docs: https://gingerlive.io/developers/",
     };
     return new Response(JSON.stringify(problem, null, 2), {
       status: 404,

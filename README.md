@@ -80,6 +80,7 @@ Tools, resources and prompts are registered once in `src/server.ts` and served t
 | Path | Purpose |
 |---|---|
 | `/mcp` | MCP Streamable HTTP endpoint |
+| `/mcp/server-card` | [SEP-2127](https://github.com/modelcontextprotocol/ext-server-card) server card (`application/mcp-server-card+json`) |
 | `/health` | Health check |
 | `/.well-known/mcp` | SEP-1960 manifest |
 | `/.well-known/mcp.json` | Registry server card |
