@@ -8,9 +8,15 @@
     "enabled": true
   },
   "durable_objects": {
-    "bindings": [{ "name": "GINGERLIVE_MCP", "class_name": "GingerLiveMCP" }]
+    "bindings": [{ "name": "GINGERLIVE_MCP", "class_name": "GingerLiveMCPSession" }]
   },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["GingerLiveMCP"] }],
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["GingerLiveMCP"] },
+    // Oct 2026: sessions now expire when idle (src/index.ts). v3 deletes the old class
+    // and with it ~5 GB of abandoned session storage; live clients just re-initialize.
+    { "tag": "v2", "new_sqlite_classes": ["GingerLiveMCPSession"] },
+    { "tag": "v3", "deleted_classes": ["GingerLiveMCP"] }
+  ],
 
   // Tool-call usage log (src/usage.ts). Schema: migrations/0001_tool_calls.sql,
   // applied with `npx wrangler d1 migrations apply gingerlive-mcp-usage --remote`.

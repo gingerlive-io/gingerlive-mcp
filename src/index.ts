@@ -20,11 +20,74 @@ interface Env {
   USAGE_DB: D1Database;
 }
 
-export class GingerLiveMCP extends McpAgent<Env> {
+// McpAgent keeps one Durable Object (with its own SQLite storage) per MCP session and
+// only deletes it when the client sends a session DELETE — which registry crawlers and
+// directory probes never do, so abandoned sessions piled up to the 5 GiB free-tier
+// storage cap (Oct 2026). Each session therefore self-destructs after a day without
+// requests; a client returning later gets 404 "Session not found" and, per the MCP
+// spec, simply re-initializes.
+const SESSION_IDLE_SECONDS = 24 * 60 * 60;
+// Re-arming the idle timer costs two storage writes, so do it at most hourly per session.
+const REARM_INTERVAL_MS = 60 * 60 * 1000;
+
+// Renamed from GingerLiveMCP: the v3 migration deletes that class, wiping the
+// abandoned sessions it accumulated (wrangler.jsonc).
+export class GingerLiveMCPSession extends McpAgent<Env> {
   server = new McpServer({ name: "GingerLive", version: SERVER_VERSION });
+  private idleTimerArmedAt = 0;
 
   async init() {
     registerGingerLive(this.server, d1Sink(this.env.USAGE_DB));
+  }
+
+  // The default event store persists then deletes every response so an SSE stream can
+  // be resumed with Last-Event-ID. Our tools answer instantly from static data and the
+  // server never pushes notifications, so there is nothing to resume — and those writes
+  // were most of the account's daily Durable Objects rows-written usage (free cap 100k).
+  protected getEventStore() {
+    return undefined;
+  }
+
+  // Every MCP request (initialize, POST, GET stream) reaches the session's DO here.
+  async fetch(request: Request): Promise<Response> {
+    const response = await super.fetch(request);
+    try {
+      await this.armIdleTimer();
+    } catch (err) {
+      console.error("Failed to arm session idle timer", err);
+    }
+    return response;
+  }
+
+  // The transport looks the session up here before anything else. A request carrying an
+  // unknown or expired session id wakes a fresh DO that would otherwise linger forever
+  // after the 404, so arm the timer for it too (a no-op cost for real sessions: their
+  // initialize lands here first and the following fetch() is throttled).
+  async getInitializeRequest() {
+    const initializeRequest = await super.getInitializeRequest();
+    if (!initializeRequest) {
+      try {
+        await this.armIdleTimer();
+      } catch (err) {
+        console.error("Failed to arm session idle timer", err);
+      }
+    }
+    return initializeRequest;
+  }
+
+  private async armIdleTimer() {
+    const now = Date.now();
+    if (now - this.idleTimerArmedAt < REARM_INTERVAL_MS) return;
+    this.idleTimerArmedAt = now;
+    for (const s of this.getSchedules()) {
+      if (s.callback === "destroyIdleSession") await this.cancelSchedule(s.id);
+    }
+    await this.schedule(SESSION_IDLE_SECONDS, "destroyIdleSession");
+  }
+
+  // Runs only if no request re-armed the timer for SESSION_IDLE_SECONDS.
+  async destroyIdleSession() {
+    await this.destroy();
   }
 }
 
@@ -175,7 +238,7 @@ export default {
 
     // Streamable HTTP transport (recommended for external clients).
     if (url.pathname === "/mcp" || url.pathname.startsWith("/mcp/")) {
-      return GingerLiveMCP.serve("/mcp", { binding: "GINGERLIVE_MCP" }).fetch(request, env, ctx);
+      return GingerLiveMCPSession.serve("/mcp", { binding: "GINGERLIVE_MCP" }).fetch(request, env, ctx);
     }
 
     const problem = {
