@@ -7,15 +7,16 @@
   "observability": {
     "enabled": true
   },
-  "durable_objects": {
-    "bindings": [{ "name": "GINGERLIVE_MCP", "class_name": "GingerLiveMCPSession" }]
-  },
   "migrations": [
     { "tag": "v1", "new_sqlite_classes": ["GingerLiveMCP"] },
     // Oct 2026: sessions now expire when idle (src/index.ts). v3 deletes the old class
     // and with it ~5 GB of abandoned session storage; live clients just re-initialize.
     { "tag": "v2", "new_sqlite_classes": ["GingerLiveMCPSession"] },
-    { "tag": "v3", "deleted_classes": ["GingerLiveMCP"] }
+    { "tag": "v3", "deleted_classes": ["GingerLiveMCP"] },
+    // Oct 10 2026: per-session Durable Objects still hit the free tier's 100k rows-written
+    // cap (session cleanup is write-heavy), so the server went stateless (src/index.ts)
+    // and v4 deletes the last class. No Durable Objects remain.
+    { "tag": "v4", "deleted_classes": ["GingerLiveMCPSession"] }
   ],
 
   // Tool-call usage log (src/usage.ts). Schema: migrations/0001_tool_calls.sql,

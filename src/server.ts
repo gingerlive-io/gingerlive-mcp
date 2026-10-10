@@ -91,7 +91,7 @@ export function registerGingerLive(server: McpServer, logUsage?: UsageSink) {
     {
       title: "Company overview",
       description:
-        "Returns GingerLive's company profile: what the livestream advertising platform does, supported streaming platforms (Twitch, Kick, YouTube Live, TikTok LIVE), headline network stats, third-party measurement partners and contact links. Use first for general \"what is GingerLive\" questions; use get_network_stats for just the reach numbers, list_ad_formats for formats, get_streamer_program_info for the creator side. Read-only; data is a static snapshot of gingerlive.io's public facts.",
+        "Returns GingerLive's company profile: what the livestream advertising platform does, supported streaming platforms (Twitch, Kick, YouTube Live, TikTok LIVE), reference clients, headline network stats, third-party measurement partners and contact links. Use first for general \"what is GingerLive\" questions; use get_network_stats for just the reach numbers, list_ad_formats for formats, get_streamer_program_info for the creator side. Read-only; data is a static snapshot of gingerlive.io's public facts.",
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
@@ -100,6 +100,7 @@ export function registerGingerLive(server: McpServer, logUsage?: UsageSink) {
         name: company.name,
         summary: company.summary,
         platforms: company.platforms,
+        clients: company.clients ?? [],
         networkStats: data.networkStats,
         measurement: data.measurement,
         contactEmail: company.contactEmail,

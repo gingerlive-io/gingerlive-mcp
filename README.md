@@ -75,7 +75,7 @@ Then ask things like *"What livestream ad formats does GingerLive offer?"*, *"Sh
 
 ## How it works
 
-Tools, resources and prompts are registered once in `src/server.ts` and served two ways: `src/index.ts` (the hosted Cloudflare Worker) and `src/stdio.ts` (a local stdio process). The Worker is built with the [Agents SDK](https://developers.cloudflare.com/agents/) (`McpAgent`) and the official MCP TypeScript SDK. Every answer comes from `src/data/agent-data.json`, a static snapshot generated from the same source as [gingerlive.io/llms.txt](https://gingerlive.io/llms.txt), so the server only ever returns information that is already public on gingerlive.io.
+Tools, resources and prompts are registered once in `src/server.ts` and served two ways: `src/index.ts` (the hosted Cloudflare Worker) and `src/stdio.ts` (a local stdio process). The Worker is stateless: each request gets a fresh server on the official MCP TypeScript SDK's web-standard Streamable HTTP transport, with no Durable Objects or other per-session storage. Every answer comes from `src/data/agent-data.json`, a static snapshot generated from the same source as [gingerlive.io/llms.txt](https://gingerlive.io/llms.txt), so the server only ever returns information that is already public on gingerlive.io.
 
 | Path | Purpose |
 |---|---|
