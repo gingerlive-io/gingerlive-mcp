@@ -1,5 +1,5 @@
 {
-    "generatedAt": "2026-10-09T12:24:55+00:00",
+    "generatedAt": "2026-10-28T11:52:10+00:00",
     "source": "https://gingerlive.io",
     "company": {
         "name": "GingerLive",
@@ -38,7 +38,7 @@
             "linkedin": "https://linkedin.com/company/88005504",
             "instagram": "https://instagram.com/gingerlivestream",
             "x": "https://x.com/GGLiveOfficial",
-            "discord": "https://discord.gg/X2PMmF9GjB"
+            "discord": "https://discord.gg/tuFHmbdbCE"
         },
         "links": {
             "home": "https://gingerlive.io/",
@@ -209,9 +209,9 @@
             "description": "Three ways to advertise on Twitch: official Twitch ads, streamer sponsorships and in-stream ad networks, compared on cost, targeting and scale.",
             "audience": "brands",
             "related": [
+                "livestream-advertising-cost",
                 "livestream-advertising",
-                "gen-z-advertising",
-                "streamer-sponsorships"
+                "gen-z-advertising"
             ]
         },
         {
@@ -338,7 +338,7 @@
             "slug": "livestreaming-statistics",
             "title": "Livestreaming Statistics 2026: Twitch, Kick, YouTube Live and TikTok LIVE",
             "url": "https://gingerlive.io/resources/livestreaming-statistics/",
-            "description": "Sourced 2026 livestreaming statistics: hours watched and market share for YouTube, TikTok LIVE, Twitch and Kick, Twitch demographics and Kick growth.",
+            "description": "Livestreaming statistics, Q3 2026: hours watched and share for YouTube, TikTok LIVE, Twitch and Kick, plus Twitch demographics and Kick growth, sourced.",
             "audience": "brands",
             "related": [
                 "twitch-vs-kick-vs-youtube-vs-tiktok",
