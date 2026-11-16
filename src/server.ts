@@ -91,7 +91,7 @@ export function registerGingerLive(server: McpServer, logUsage?: UsageSink) {
     {
       title: "Company overview",
       description:
-        "Returns GingerLive's company profile: what the livestream advertising platform does, supported streaming platforms (Twitch, Kick, YouTube Live, TikTok LIVE), reference clients, headline network stats, third-party measurement partners and contact links. Use first for general \"what is GingerLive\" questions; use get_network_stats for just the reach numbers, list_ad_formats for formats, get_streamer_program_info for the creator side. Read-only; data is a static snapshot of gingerlive.io's public facts.",
+        "Returns GingerLive's company profile: what the livestream advertising platform does, supported streaming platforms (Twitch, Kick, YouTube Live, TikTok LIVE), reference clients, headline network stats, third-party measurement partners, its KICK Ads buying-agency service in Turkey and contact links. Use first for general \"what is GingerLive\" questions; use get_network_stats for just the reach numbers, list_ad_formats for formats, get_streamer_program_info for the creator side. Read-only; data is a static snapshot of gingerlive.io's public facts.",
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
@@ -103,6 +103,7 @@ export function registerGingerLive(server: McpServer, logUsage?: UsageSink) {
         clients: company.clients ?? [],
         networkStats: data.networkStats,
         measurement: data.measurement,
+        kickAds: data.kickAds,
         contactEmail: company.contactEmail,
         links: company.links,
       }),
@@ -125,11 +126,11 @@ export function registerGingerLive(server: McpServer, logUsage?: UsageSink) {
     {
       title: "Ad formats",
       description:
-        "Lists the livestream ad formats GingerLive sells to brands (e.g. picture-in-picture, banners, rich media, pinned chat drops, streamer announcements), each with a short description, plus format badges such as unskippable and adblock-safe. Use when planning or comparing ad formats; use get_company_overview for the company itself. Read-only.",
+        "Lists the livestream ad formats GingerLive sells to brands (e.g. picture-in-picture, banners, rich media, pinned chat drops, streamer announcements), each with a short description, plus format badges such as unskippable and adblock-safe. Also returns kickAds: KICK's own pre-roll, mid-roll and display inventory, which GingerLive books in Turkey as a registered buying agency (served by KICK, not an in-stream format). Use when planning or comparing ad formats; use get_company_overview for the company itself. Read-only.",
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
       inputSchema: {},
     },
-    async () => json({ formats: data.adFormats, badges: data.adFormatBadges }),
+    async () => json({ formats: data.adFormats, badges: data.adFormatBadges, kickAds: data.kickAds }),
   );
 
   registerTool(

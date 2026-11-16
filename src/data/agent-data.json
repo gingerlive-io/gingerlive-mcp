@@ -1,10 +1,10 @@
 {
-    "generatedAt": "2026-10-28T11:52:10+00:00",
+    "generatedAt": "2026-11-16T09:33:22+00:00",
     "source": "https://gingerlive.io",
     "company": {
         "name": "GingerLive",
         "legalName": "Gingerlive Bilişim Teknolojileri A.Ş.",
-        "summary": "GingerLive is a livestream advertising platform that connects brands with 1,000+ streamers on Twitch, Kick, YouTube and TikTok. Its Streamsense AI places non-intrusive, unskippable ads at exactly the right live moment, so streamers earn from their content and brands reach Gen Z at scale.",
+        "summary": "GingerLive is a livestream advertising platform that connects brands with 1,000+ streamers on Twitch, Kick, YouTube and TikTok. Its Streamsense AI detects the right live moment and triggers non-intrusive, unskippable ads exactly then, so streamers earn from their content and brands reach Gen Z at scale.",
         "platforms": [
             "Twitch",
             "Kick",
@@ -112,6 +112,20 @@
         "Adblock-Safe",
         "~99% VTR"
     ],
+    "kickAds": {
+        "market": "Turkey",
+        "role": "Registered buying agency for KICK",
+        "summary": "GingerLive is a registered buying agency for KICK in Turkey. Book KICK's pre-roll, mid-roll and display inventory through us and run it alongside your in-stream campaign, with one point of contact from brief to final report.",
+        "formats": [
+            "Pre-roll",
+            "Mid-roll",
+            "Display"
+        ],
+        "servedBy": "KICK",
+        "howBought": "Insertion order with KICK, placed and managed by GingerLive as buying agency",
+        "moreInfoUrl": "https://gingerlive.io/resources/advertise-on-kick/",
+        "contactUrl": "https://gingerlive.io/brands/#contact"
+    },
     "caseStudies": [
         {
             "slug": "gingerlive-golf-roko-spring-2025-case-study",
