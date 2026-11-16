@@ -2,6 +2,8 @@
 
 **The official [Model Context Protocol](https://modelcontextprotocol.io) server for [GingerLive](https://gingerlive.io)**, the livestream advertising platform that connects brands with 1,000+ streamers on Twitch, Kick, YouTube Live and TikTok Live.
 
+[![GingerLive MCP on StartupScores](https://startupscores.com/badge/gingerlive-mcp.svg?style=shield&v=combo&theme=dark)](https://startupscores.com/open-source/gingerlive-mcp)
+
 Connect it to Claude, ChatGPT, Cursor or any MCP client and your assistant can answer questions about livestream advertising using GingerLive's own up-to-date data: ad formats, network reach, campaign case studies and the streamer monetization program.
 
 - **Endpoint (Streamable HTTP):** `https://mcp.gingerlive.io/mcp`
